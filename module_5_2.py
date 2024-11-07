@@ -1,5 +1,14 @@
 class House:
+    def __init__(self, name, number_of_floor):
+        self.name = name
+        self.number_of_floor = number_of_floor
 
+    def go_to(self, new_floor):
+        if new_floor <= self.number_of_floor and new_floor >= 1:
+            for i in range(1,new_floor+1):
+                print(i)
+        else:
+            print("Такого этажа не существует")
     def __init__(self, name, number_of_floor):
         self.name = name
         self.number_of_floor = number_of_floor
